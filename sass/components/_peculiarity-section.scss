@@ -1,0 +1,41 @@
+.peculiarity {
+  @extend %section;
+}
+
+.peculiarity__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+}
+
+.peculiarity__list {
+  display: flex;
+  gap: 30px;
+}
+
+.peculiarity__group {
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  background-color: var(--gray-bgd-cl);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peculiarity__subtitle {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.peculiarity__desc {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--gray-txt-cl);
+}
