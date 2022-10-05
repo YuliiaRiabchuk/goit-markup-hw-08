@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../images/hero/overlay.png), url(../images/hero/hero-img.jpeg);
@@ -8,7 +8,16 @@
   background-size: cover;
 
   background-color: var(--black-bgd-cl);
-  padding: 200px 0 200px;
+  padding: 118px 0 118px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0 200px;
+  }
 }
 
 .hero__container {
@@ -18,24 +27,29 @@
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
-  width: 696px;
+  max-width: 360px;
 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 
 .hero__btn {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   background-color: var(--accent-bgd-cl);
   color: var(--light-txt-cl);
@@ -51,5 +65,9 @@
   &:hover,
   &:focus {
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
   }
 }
