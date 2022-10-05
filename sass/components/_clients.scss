@@ -1,7 +1,5 @@
 .clients {
   @extend %section;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .clients__container {
@@ -14,24 +12,42 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  gap: 30px;
 }
 
 .clients__link {
   display: flex;
-  width: 170px;
+  flex-wrap: wrap;
+
+  width: 210px;
   height: 92px;
+
   border: 1px solid var(--gray-bgd-icon-cl);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
 
-  transition: border 250ms var(--animation-hover);
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    transition: border 250ms var(--animation-hover);
+    width: 170px;
+    height: 92px;
+  }
 
   &:hover,
   &:focus {
