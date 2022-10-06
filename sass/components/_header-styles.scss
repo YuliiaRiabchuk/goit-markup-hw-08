@@ -20,6 +20,15 @@
 
   color: #000000;
   text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
 }
 
 .logo__accent {
