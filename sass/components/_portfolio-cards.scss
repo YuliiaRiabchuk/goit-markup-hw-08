@@ -2,13 +2,30 @@
   display: flex;
 }
 .cards__list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .cards__item {
   background: #ffffff;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .cards__link {

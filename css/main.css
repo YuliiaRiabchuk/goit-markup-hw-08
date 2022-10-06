@@ -653,11 +653,31 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .filters__list {
+    max-width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filtres__btn {
@@ -689,17 +709,35 @@ p {
   display: flex;
 }
 
-.cards__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .cards__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .cards__item {
   background: #ffffff;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: 370px;
+  }
 }
 
 .cards__link {
@@ -785,13 +823,25 @@ p {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer__logo {
@@ -812,6 +862,11 @@ p {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .adress {
+    margin-bottom: 60px;
+  }
 }
 
 .address__link {
@@ -835,8 +890,20 @@ p {
   color: var(--accent-txt-cl);
 }
 
-.footer-socials {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-left: 70px;
+  }
 }
 
 .footer-socials__title {
@@ -854,6 +921,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .footer-socials__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-socials__link {
@@ -881,11 +955,13 @@ p {
   fill: var(--light-txt-cl);
 }
 
-.footer__group--form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer__group--form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .footer__form {
@@ -904,7 +980,7 @@ p {
 }
 
 .footer__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -973,6 +1049,16 @@ p {
   letter-spacing: 0.03em;
   color: var(--gray-txt-cl-60);
 }
+@media screen and (max-width: 767px) {
+  .footer__input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
+}
 
 .footer__btn {
   position: relative;
@@ -999,8 +1085,18 @@ p {
 
 .footer__icon {
   position: absolute;
-  right: 28px;
-  bottom: 13px;
+}
+@media screen and (max-width: 767px) {
+  .footer__icon {
+    bottom: 12px;
+    right: 145px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    right: 28px;
+    bottom: 13px;
+  }
 }
 
 .backdrop {
