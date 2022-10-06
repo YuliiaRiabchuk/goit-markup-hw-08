@@ -1173,7 +1173,8 @@ p {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-width: 528px;
+  max-width: 450px;
+  min-height: 580px;
   background-color: var(--light-txt-cl);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1184,6 +1185,11 @@ p {
   transition: -webkit-transform var(--animation-modal);
   transition: transform var(--animation-modal);
   transition: transform var(--animation-modal), -webkit-transform var(--animation-modal);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 
 .close-btn {
