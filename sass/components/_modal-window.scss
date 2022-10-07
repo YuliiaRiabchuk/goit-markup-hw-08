@@ -29,7 +29,8 @@
   padding: 40px;
 
   max-width: 450px;
-  height: 100%;
+
+  min-height: 609px;
 
   background-color: var(--light-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,6 +39,11 @@
 
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform var(--animation-modal);
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 610px;
+  }
 
   @media screen and (min-width: 1200px) {
     min-width: 528px;
