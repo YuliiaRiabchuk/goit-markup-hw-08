@@ -13,7 +13,7 @@
   padding: 118px 0 118px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img_sm-@2x.jpeg);
+    background-image: url(../images/hero/overlay.png), url(../images/hero/img_sm-@2x.jpeg);
   }
 
   // Tablet
@@ -21,7 +21,7 @@
     background-image: url(../images/hero/overlay.png), url(../images/hero/img_md-@1x.jpeg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/img_md-@2x.jpeg);
+      background-image: url(../images/hero/overlay.png), url(../images/hero/img_md-@2x.jpeg);
     }
   }
 
@@ -31,7 +31,7 @@
     background-image: url(../images/hero/Img_lg-@1x.jpeg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/Img_lg-@2x.jpeg);
+      background-image: url(../images/hero/overlay.png), url(../images/hero/Img_lg-@2x.jpeg);
     }
   }
 
