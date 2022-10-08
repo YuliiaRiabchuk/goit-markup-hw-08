@@ -148,13 +148,21 @@
             <ul class="benefits__list list">
               <li class="benefits__item">
                 <div class="benefits__thumb">
-                  <img
-                    class="benefits__img img"
-                    src="./images/web-studio/box-1.jpeg"
-                    alt="фото роботи над версткою сайту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px )"
+                      srcset="
+                        ./images/web-studio/img_lg-@1x.jpeg 1x,
+                        ./images/web-studio/img_lg-@2x.jpeg 2x
+                      "
+                    />
+                    <img
+                      class="benefits__img img"
+                      src="./images/web-studio/img_lg-@1x.jpeg"
+                      alt="фото роботи над версткою сайту"
+                    />
+                  </picture>
                   <div class="benefits__overlay"
                     ><p class="benefits__desc">Десктопні додатки</p></div
                   >
@@ -162,13 +170,21 @@
               </li>
               <li class="benefits__item">
                 <div class="benefits__thumb">
-                  <img
-                    class="benefits__img img"
-                    src="./images/web-studio/box-2.jpeg"
-                    alt="фото адаптації сторінки на мобільни пристрої"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px )"
+                      srcset="
+                        ./images/web-studio/img_lg-@1x-1.jpeg 1x,
+                        ./images/web-studio/img_lg-@2x-1.jpeg 2x
+                      "
+                    />
+                    <img
+                      class="benefits__img img"
+                      src="./images/web-studio/img_lg-@1x-1.jpeg"
+                      alt="фото адаптації сторінки на мобільни пристрої"
+                    />
+                  </picture>
                   <div class="benefits__overlay"
                     ><p class="benefits__desc">Мобільні додатки</p></div
                   >
@@ -176,13 +192,21 @@
               </li>
               <li class="benefits__item">
                 <div class="benefits__thumb">
-                  <img
-                    class="benefits__img img"
-                    src="./images/web-studio/box-3.jpeg"
-                    alt="фото оптимізації кольорів"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px )"
+                      srcset="
+                        ./images/web-studio/img_lg-@1x-2.jpeg 1x,
+                        ./images/web-studio/img_lg-@2x-2.jpeg 2x
+                      "
+                    />
+                    <img
+                      class="benefits__img img"
+                      src="./images/web-studio/img_lg-@1x-2.jpeg"
+                      alt="фото оптимізації кольорів"
+                    />
+                  </picture>
                   <div class="benefits__overlay"
                     ><p class="benefits__desc">Дизайнерські рішення </p></div
                   >
@@ -200,13 +224,29 @@
 
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__img img"
-                src="./images/teams/img-1.jpeg"
-                alt="фото менеджера команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images/teams/img_lg-@1x.jpeg 1x, ./images/teams/img_lg-@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images/teams/img_md-@1x.jpeg 1x, ./images/teams/img_md-@2x.jpeg 2x"
+                />
+
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images/teams/img_sm-@1x.jpeg 1x, ./images/teams/img_sm-@2x.jpeg 2x"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/teams/img_sm-@1x.jpeg"
+                  alt="фото менеджера команди"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__desc" lang="en">Product Designer</p>
@@ -269,13 +309,28 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__img img"
-                src="./images/teams/img-2.jpeg"
-                alt="фото менеджера команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/teams/img_lg-@1x-1.jpeg 1x, ./images/teams/img_lg-@2x-1.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images/teams/img_md-@1x-1.jpeg 1x, ./images/teams/img_md-@2x-1.jpeg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images/teams/img_sm-@1x-1.jpeg 1x, ./images/teams/img_sm-@2x-1.jpeg 2x"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/teams/img_sm-@1x-1.jpeg"
+                  alt="фото менеджера команди"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__desc" lang="en">Frontend Developer</p>
@@ -337,13 +392,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img img"
-                src="./images/teams/img-3.jpeg"
-                alt="фото менеджера команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/teams/img_lg-@1x-2.jpeg 1x, ./images/teams/img_lg-@2x-2.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images/teams/img_md-@1x-2.jpeg 1x, ./images/teams/img_md-@2x-2.jpeg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images/teams/img_sm-@1x-2.jpeg 1x, ./images/teams/img_sm-@2x-2.jpeg 2x"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/teams/img-3.jpeg"
+                  alt="фото менеджера команди"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__desc" lang="en">Marketing</p>
@@ -406,13 +476,28 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="img-team img"
-                src="./images/teams/img-4.jpeg"
-                alt="фото менеджера команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/teams/img_lg-@1x-3.jpeg 1x, ./images/teams/img_lg-@2x-3.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images/teams/img_md-@1x-3.jpeg 1x, ./images/teams/img_md-@2x-3.jpeg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images/teams/img_sm-@1x-3.jpeg 1x, ./images/teams/img_sm-@2x-3.jpeg 2x"
+                />
+                <img
+                  class="img-team img"
+                  src="./images/teams/img_sm-@1x-3.jpeg"
+                  alt="фото менеджера команди"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__desc" lang="en">UI Designer</p>

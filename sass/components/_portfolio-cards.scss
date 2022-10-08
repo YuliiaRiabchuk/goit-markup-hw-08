@@ -13,6 +13,10 @@
   background: #ffffff;
   width: 450px;
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }

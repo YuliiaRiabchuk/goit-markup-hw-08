@@ -61,7 +61,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 @media screen and (min-width: 768px) {
   .footer__container, .portfolio__container, .clients__container, .team__container, .benefits__container, .peculiarity__container, .hero__container, .header__container {
@@ -300,16 +299,37 @@ p {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero/overlay.png), url(../images/hero/hero-img.jpeg);
+  background-image: url(../images/hero/overlay.png), url(../images/hero/img_sm-@1x.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--black-bgd-cl);
   padding: 118px 0 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img_sm-@2x.jpeg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: url(../images/hero/overlay.png), url(../images/hero/img_md-@1x.jpeg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img_md-@2x.jpeg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: url(../images/hero/img_lg-@1x.jpeg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img_lg-@2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -474,6 +494,12 @@ p {
 
 .benefits__thumb {
   position: relative;
+}
+
+.benefits__img {
+  padding: 0;
+  width: 370px;
+  height: 274px;
 }
 
 .benefits__overlay {
@@ -762,6 +788,11 @@ p {
 .cards__item {
   background: #ffffff;
   width: 450px;
+}
+@media screen and (max-width: 479px) {
+  .cards__item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .cards__item {
