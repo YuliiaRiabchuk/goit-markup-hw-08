@@ -331,6 +331,11 @@ p {
     background-image: url(../images/hero/img-overlay_lg-@2x.png), url(../images/hero/img_lg-@2x.jpeg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px;
+  }
+}
 
 .hero__container {
   -webkit-box-align: center;

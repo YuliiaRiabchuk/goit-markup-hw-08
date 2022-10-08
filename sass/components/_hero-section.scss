@@ -36,6 +36,10 @@
         url(../images/hero/img_lg-@2x.jpeg);
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0 200px;
+  }
 }
 
 .hero__container {
