@@ -29,11 +29,11 @@
 
   @media screen and (min-width: 769px) {
     background-image: url(../images/hero/img-overlay_lg-@1x.png),
-      url(../images/hero/img_lg-@1x.jpeg);
+      url(../images/hero/Img_lg-@1x.jpeg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/hero/img-overlay_lg-@2x.png),
-        url(../images/hero/img_lg-@2x.jpeg);
+        url(../images/hero/Img_lg-@2x.jpeg);
     }
   }
 
