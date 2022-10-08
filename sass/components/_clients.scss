@@ -39,15 +39,17 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    min-width: 210px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 226px;
-    height: 92px;
   }
 
   @media screen and (min-width: 1200px) {
     transition: border 250ms var(--animation-hover);
     width: 170px;
-    height: 92px;
   }
 
   &:hover,

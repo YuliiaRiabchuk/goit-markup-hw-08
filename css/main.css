@@ -358,6 +358,12 @@ p {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 479px) {
+  .hero__title {
+    font-size: 44px;
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -687,10 +693,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .clients__link {
+    min-width: 210px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
-    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -698,7 +708,6 @@ p {
     -webkit-transition: border 250ms var(--animation-hover);
     transition: border 250ms var(--animation-hover);
     width: 170px;
-    height: 92px;
   }
 }
 .clients__link:hover, .clients__link:focus {

@@ -60,6 +60,11 @@
   margin-right: auto;
   margin-bottom: 30px;
 
+  @media screen and (max-width: 479px) {
+    font-size: 44px;
+    max-width: 360px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     width: 696px;
