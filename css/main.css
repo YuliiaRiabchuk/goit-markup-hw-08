@@ -296,7 +296,7 @@ p {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -321,25 +321,14 @@ p {
     background-image: url(../images/hero/img-overlay_md-@2x.png), url(../images/hero/img_md-@2x.jpeg);
   }
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
-}
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url(../images/hero/img-overlay_lg-@1x.png), url(../images/hero/img-overlay_lg-@1x.png);
+    background-image: url(../images/hero/img-overlay_lg-@1x.png), url(../images/hero/img_lg-@1x.jpeg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/img-overlay_lg-@2x.png), url(../images/hero/img-overlay_lg-@2x.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1600px;
-    padding: 200px 0 200px;
+    background-image: url(../images/hero/img-overlay_lg-@2x.png), url(../images/hero/img_lg-@2x.jpeg);
   }
 }
 
