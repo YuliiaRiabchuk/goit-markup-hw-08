@@ -121,6 +121,10 @@
   display: flex;
 
   gap: 20px;
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mob-socials-link {

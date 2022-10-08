@@ -1554,6 +1554,12 @@ p {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 479px) {
+  .mobile-socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .mob-socials-link {
   font-weight: 500;
