@@ -308,28 +308,28 @@ p {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/overlay.png), url(../images/hero/img_sm-@2x.jpeg);
+    background-image: url(../images/hero/overlay.png), url(../../images/hero/img_sm-@2x.jpeg);
   }
 }
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: url(../images/hero/overlay.png), url(../images/hero/img_md-@1x.jpeg);
+    background-image: url(../images/hero/overlay.png), url(../../images/hero/img_md-@1x.jpeg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/overlay.png), url(../images/hero/img_md-@2x.jpeg);
+    background-image: url(../images/hero/overlay.png), url(../../images/hero/img_md-@2x.jpeg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: url(../images/hero/Img_lg-@1x.jpeg);
+    background-image: url(../../images/hero/Img_lg-@1x.jpeg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/overlay.png), url(../images/hero/Img_lg-@2x.jpeg);
+    background-image: url(../images/hero/overlay.png), url(../../images/hero/Img_lg-@2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1217,10 +1217,10 @@ p {
   transition: transform var(--animation-modal);
   transition: transform var(--animation-modal), -webkit-transform var(--animation-modal);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
-    min-width: 450px;
-    min-height: 610px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {

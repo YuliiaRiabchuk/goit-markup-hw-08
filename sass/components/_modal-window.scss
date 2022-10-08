@@ -40,9 +40,9 @@
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform var(--animation-modal);
 
-  @media screen and (min-width: 480px) {
-    min-width: 450px;
-    min-height: 610px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
