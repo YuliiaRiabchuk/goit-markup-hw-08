@@ -25,6 +25,10 @@
   justify-content: space-between;
 
   gap: 30px;
+
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
 }
 
 .clients__link {

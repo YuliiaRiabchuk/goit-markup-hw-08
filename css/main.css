@@ -673,6 +673,13 @@ p {
           justify-content: space-between;
   gap: 30px;
 }
+@media screen and (max-width: 479px) {
+  .clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .clients__link {
   display: -webkit-box;
@@ -1232,7 +1239,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    width: 528px;
   }
 }
 
